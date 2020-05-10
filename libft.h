@@ -6,7 +6,7 @@
 /*   By: tfarenga <tfarenga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/30 13:35:55 by tfarenga          #+#    #+#             */
-/*   Updated: 2020/05/10 15:08:31 by tfarenga         ###   ########.fr       */
+/*   Updated: 2020/05/10 16:07:18 by tfarenga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ typedef struct		s_list
 void				*ft_memset(void *destination, int c, size_t n);
 void				*ft_memcpy(void *destination, const void *source,
 					size_t n);
-// void				*ft_memccpy(void *destination, const void *source,
-// 					int c, size_t n);
+void				*ft_memccpy(void *destination, const void *source,
+					int c, size_t n);
 // void				*ft_memmove(void *destination, const void *source,
 // 					size_t n);
 // void				*ft_memchr(const void *arr, int c, size_t n);

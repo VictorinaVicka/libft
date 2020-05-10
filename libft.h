@@ -6,7 +6,7 @@
 /*   By: tfarenga <tfarenga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/30 13:35:55 by tfarenga          #+#    #+#             */
-/*   Updated: 2020/05/10 11:25:44 by tfarenga         ###   ########.fr       */
+/*   Updated: 2020/05/10 11:50:47 by tfarenga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int					ft_isascii(int c);
 int					ft_isprint(int ch);
 int					ft_toupper(int ch);
 int					ft_tolower(int ch);
-// int					ft_strncmp(const char *str1, const char *str2, size_t n);
+int					ft_strncmp(const char *str1, const char *str2, size_t n);
 // char				*ft_strnstr(const char *big, const char *little,
 // 					size_t len);
 // char				*ft_strrchr(const char *s, int c);

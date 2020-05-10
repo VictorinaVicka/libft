@@ -6,7 +6,7 @@
 /*   By: tfarenga <tfarenga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/30 13:35:55 by tfarenga          #+#    #+#             */
-/*   Updated: 2020/05/10 16:26:08 by tfarenga         ###   ########.fr       */
+/*   Updated: 2020/05/10 19:15:12 by tfarenga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void				*ft_memccpy(void *destination, const void *source,
 					int c, size_t n);
 void				*ft_memmove(void *destination, const void *source,
 					size_t n);
-// void				*ft_memchr(const void *arr, int c, size_t n);
+void				*ft_memchr(const void *arr, int c, size_t n);
 // int					ft_memcmp(const void *memptr1, const void *memptr2,
 // 					size_t num);
 size_t				ft_strlen(const char *str);

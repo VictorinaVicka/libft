@@ -6,7 +6,7 @@
 /*   By: tfarenga <tfarenga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/10 13:34:25 by tfarenga          #+#    #+#             */
-/*   Updated: 2020/05/10 14:38:09 by tfarenga         ###   ########.fr       */
+/*   Updated: 2020/05/10 15:02:23 by tfarenga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	while (index < (size - 1) && *src)
 	{
 		dst[index] = *src;
-		index++;
 		src++;
+		index++;
 	}
 	dst[index] = '\0';
 	return (len_dst + len_src);

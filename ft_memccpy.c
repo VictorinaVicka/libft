@@ -6,7 +6,7 @@
 /*   By: tfarenga <tfarenga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/10 15:59:10 by tfarenga          #+#    #+#             */
-/*   Updated: 2020/05/10 16:15:01 by tfarenga         ###   ########.fr       */
+/*   Updated: 2020/05/10 16:24:49 by tfarenga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memccpy(void *destination, const void *source, int c, size_t n)
 	{
 		*dst = *src;
 		if (*dst == (char)c)
-			return(dst + 1);
+			return (dst + 1);
 		dst++;
 		src++;
 	}

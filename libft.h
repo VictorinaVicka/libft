@@ -6,7 +6,7 @@
 /*   By: tfarenga <tfarenga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/30 13:35:55 by tfarenga          #+#    #+#             */
-/*   Updated: 2020/05/10 13:07:36 by tfarenga         ###   ########.fr       */
+/*   Updated: 2020/05/10 13:20:34 by tfarenga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ char				*ft_strnstr(const char *big, const char *little,
 char				*ft_strrchr(const char *s, int c);
 char				*ft_strchr(const char *str, int ch);
 // size_t				ft_strlcat(char *dst, const char *src, size_t size);
-// size_t				ft_strlcpy(char *dst, const char *src, size_t size);
+size_t				ft_strlcpy(char *dst, const char *src, size_t size);
 // char				*ft_strdup(const char *str);
 // void				*ft_calloc(size_t num, size_t size);
 //  char				*ft_substr(char const *s, unsigned int start, size_t len);

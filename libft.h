@@ -6,7 +6,7 @@
 /*   By: tfarenga <tfarenga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/30 13:35:55 by tfarenga          #+#    #+#             */
-/*   Updated: 2020/05/10 13:35:05 by tfarenga         ###   ########.fr       */
+/*   Updated: 2020/05/10 14:55:38 by tfarenga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
-// void				*ft_memset(void *destination, int c, size_t n);
+void				*ft_memset(void *destination, int c, size_t n);
 // void				*ft_memcpy(void *destination, const void *source,
 // 					size_t n);
 // void				*ft_memccpy(void *destination, const void *source,
@@ -34,7 +34,7 @@ typedef struct		s_list
 // 					size_t num);
 size_t				ft_strlen(const char *str);
 int					ft_atoi(const char *str);
-// void				ft_bzero(void *s, size_t n);
+void				ft_bzero(void *s, size_t n);
 int					ft_isalpha(int ch);
 int					ft_isdigit(int ch);
 int					ft_isalnum(int ch);

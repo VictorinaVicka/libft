@@ -6,7 +6,7 @@
 /*   By: tfarenga <tfarenga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/09 20:30:45 by tfarenga          #+#    #+#             */
-/*   Updated: 2020/05/09 20:30:53 by tfarenga         ###   ########.fr       */
+/*   Updated: 2020/05/11 15:50:33 by tfarenga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,9 +53,3 @@ char		*ft_strtrim(char const *s1, char const *set)
 	str[index] = '\0';
 	return (str);
 }
-
-// int	main(void)
-// {
-// 	printf("%s\n", ft_strtrim("kzjdfv jdf as", "as"));
-// 	return (0);
-// }

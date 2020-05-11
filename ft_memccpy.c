@@ -6,7 +6,7 @@
 /*   By: tfarenga <tfarenga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/10 15:59:10 by tfarenga          #+#    #+#             */
-/*   Updated: 2020/05/10 16:24:49 by tfarenga         ###   ########.fr       */
+/*   Updated: 2020/05/11 19:57:18 by tfarenga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,24 @@
 
 void	*ft_memccpy(void *destination, const void *source, int c, size_t n)
 {
+	size_t			index;
 	unsigned char	*dst;
 	unsigned char	*src;
 
-	dst = (unsigned char *)destination;
-	src = (unsigned char *)source;
-	while (n--)
+	dst = (unsigned char*)destination;
+	src = (unsigned char*)source;
+	index = 0;
+	while (index < n && src[index] != (unsigned char)c)
 	{
-		*dst = *src;
-		if (*dst == (char)c)
-			return (dst + 1);
-		dst++;
-		src++;
+		dst[index] = src[index];
+		index++;
 	}
-	return (NULL);
+	if (index == n)
+		return (NULL);
+	else
+	{
+		dst[index] = src[index];
+		index++;
+		return (&dst[index]);
+	}
 }

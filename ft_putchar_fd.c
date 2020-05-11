@@ -6,7 +6,7 @@
 /*   By: tfarenga <tfarenga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/11 13:04:00 by tfarenga          #+#    #+#             */
-/*   Updated: 2020/05/11 13:07:29 by tfarenga         ###   ########.fr       */
+/*   Updated: 2020/05/11 14:29:50 by tfarenga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	write(fd, &c, 1);
+	if (fd >= 0)
+		write(fd, &c, 1);
 }

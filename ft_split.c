@@ -6,7 +6,7 @@
 /*   By: tfarenga <tfarenga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/09 20:05:48 by tfarenga          #+#    #+#             */
-/*   Updated: 2020/05/09 20:05:55 by tfarenga         ###   ########.fr       */
+/*   Updated: 2020/05/11 15:54:21 by tfarenga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,19 +87,3 @@ char				**ft_split(char const *s, char c)
 	rezu[index] = NULL;
 	return (rezu);
 }
-
-// int				main(void)
-// {
-// 	char	**tab;
-// 	unsigned int	i;
-
-// 	i = 0;
-// 	tab = ft_split("      split       this for   me  !", 'm');
-// 	if (!tab[0])
-// 		ft_putendl_fd("ok\n", 1);
-// 	while (tab[i] != NULL)
-// 	{
-// 		ft_putendl_fd(tab[i], 1);
-// 		i++;
-// 	}
-// }

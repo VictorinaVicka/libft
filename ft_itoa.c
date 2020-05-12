@@ -6,83 +6,54 @@
 /*   By: tfarenga <tfarenga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/11 15:58:06 by tfarenga          #+#    #+#             */
-/*   Updated: 2020/05/11 16:32:11 by tfarenga         ###   ########.fr       */
+/*   Updated: 2020/05/12 11:43:13 by tfarenga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	size(int a)
+static int	size(long a)
 {
-	size_t	digit;
-	size_t	go;
+	size_t	l;
 
-	digit = 1;
-	go = a / 10;
-	while (go != 0)
-	{
-		go /= 10;
-		digit++;
-	}
-	return (digit);
-}
-
-static int	ft_factor(int digit)
-{
-	size_t	resu;
-
-	resu = 1;
-	while (digit > 1)
-	{
-		digit--;
-		resu *= 10;
-	}
-	return (resu);
-}
-
-static char	*result(char *resu, int a)
-{
-	size_t	index;
-	size_t	digit;
-	size_t	factor;
-
-	index = 0;
+	l = 1;
 	if (a < 0)
 	{
-		resu[index] = '-';
-		index++;
+		l++;
 		a = -a;
 	}
-	digit = size(a);
-	factor = ft_factor(digit);
-	while (digit > 0)
+	while (a >= 10)
 	{
-		resu[index] = a / factor + 48;
-		a %= factor;
-		factor /= 10;
-		index++;
-		digit--;
+		a /= 10;
+		l++;
 	}
-	resu[index] = '\0';
-	return (resu);
+	return (l);
 }
 
 char		*ft_itoa(int n)
 {
-	int		otr;
+	size_t	o;
 	char	*resu;
+	size_t	len;
+	long	a;
 
-	otr = 0;
-	if (n < 0)
-		otr = 1;
-	resu = NULL;
-	if (!(resu = (char *)malloc(sizeof(char) * size(n) + otr + 1)))
+	o = 0;
+	a = n;
+	len = size(a);
+	if (!(resu = (char *)malloc(sizeof(char) * len + 1)))
 		return (NULL);
-	if (n == -2147483648)
+	if (a < 0)
 	{
-		ft_strlcpy(resu, "-2147483648", 12);
-		return (resu);
+		a = -a;
+		resu[0] = '-';
+		o = 1;
 	}
-	resu = result(resu, n);
+	resu[len] = '\0';
+	while ((len - o) > 0)
+	{
+		resu[len - 1] = a % 10 + '0';
+		a /= 10;
+		len--;
+	}
 	return (resu);
 }

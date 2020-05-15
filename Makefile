@@ -6,7 +6,7 @@
 #    By: tfarenga <tfarenga@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/30 13:36:23 by tfarenga          #+#    #+#              #
-#    Updated: 2020/05/11 19:19:16 by tfarenga         ###   ########.fr        #
+#    Updated: 2020/05/15 11:30:52 by tfarenga         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +46,7 @@ bonus: $(BONUSOBJ) libft.h
 	$(CLANG) $(FLAG) -c -o $@ $<
 
 clean:
-	rm -rf *.o
+	rm -rf $(OBJ) $(BONUSOBJ)
 
 fclean: clean
 	rm -rf $(NAME)
